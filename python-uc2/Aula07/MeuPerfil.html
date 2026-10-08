@@ -96,8 +96,7 @@
 
                 <a href="login.html"
                     class="btn btn-sm btn-success me-1">
-                    <i class="fa-solid fa-right-to-bracket"></i>
-                     Login 
+                    <i class="fa-solid fa-right-to-bracket"></i> Login 
                 </a>
                 <a href="auth/logout"
                     class="btn btn-sm btn-warning me-1">
@@ -121,138 +120,172 @@
     Main da pagina 
 -->
 <main class="py-4">
+
     <div class="container">
 
-        <div class="card shadow-sm mb-4">
-            <div class="row g-0 align-items-center">
+        <!-- Página para usuário deslogado -->
+        <div id="usuarioDeslogado" class="text-center">
 
-                <div class="col-md-5 text-center p-3">
-                    <img src="img/D_NQ_NP_2X_873588-MLA112878636368_072026-F.webp"
-                         class="img-fluid rounded"
-                         alt="Auxiliar de Partida Carregador Bateria com Compressor de Ar">
+            <div class="card shadow-sm">
+                <div class="card-body py-5">
+
+                    <i class="fa-solid fa-user-lock fa-4x text-secondary mb-4"></i>
+
+                    <h2>Você não está conectado</h2>
+
+                    <p class="text-muted">
+                        Faça login para acessar seu perfil.
+                    </p>
+
+                    <a href="login.html" class="btn btn-primary">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Fazer login
+                    </a>
+
                 </div>
-
-                <div class="col-md-7">
-                    <div class="card-body">
-                        <h1 class="mb-3">
-                            Auxiliar de Partida Carregador Bateria
-                            com Compressor de Ar Emergência Portátil Veicular
-                            Floots Automotivo
-                        </h1>
-
-                        <p>
-                            Bomba de ar automotiva multifuncional com auxiliar de
-                            partida, desenvolvida para oferecer praticidade e
-                            segurança em situações de emergência.
-                        </p>
-
-                        <a href="#" class="btn btn-primary">
-                            Adicionar ao carrinho
-                        </a>
-                    </div>
-                </div>
-
             </div>
+
         </div>
 
 
-        <div class="card shadow-sm">
-            <div class="card-body">
+        <!-- Página para usuário logado -->
+        <div id="usuarioLogado" style="display: none;">
 
-                <h3>Descrição</h3>
-
-                <p>
-                    Este produto possui um design moderno e compacto. Seu sistema
-                    de inflação foi desenvolvido para facilitar o uso, sem a
-                    necessidade de utilizar um bico específico.
+            <div class="mb-4">
+                <h1>Meu Perfil</h1>
+                <p class="text-muted">
+                    Gerencie seus dados pessoais, endereço e pedidos.
                 </p>
+            </div>
 
-                <p>
-                    É uma bomba de ar automotiva multifuncional que também funciona
-                    como dispositivo de partida auxiliar, sendo uma opção prática
-                    para motoristas que desejam estar preparados para situações
-                    inesperadas na estrada.
-                </p>
 
-                <hr>
+            <!-- Dados pessoais -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
 
-                <h3>Principais características</h3>
+                    <h4 class="mb-4">
+                        <i class="fa-solid fa-user me-2"></i>
+                        Dados pessoais
+                    </h4>
 
-                <h5>1. Proteção para situações na estrada</h5>
-                <p>
-                    Permite inflar rapidamente pneus de carros, bicicletas,
-                    motocicletas e diferentes tipos de bolas. Também possui
-                    função de partida auxiliar para situações de emergência.
-                </p>
+                    <p>
+                        <strong>Nome:</strong>
+                        João da Silva
+                    </p>
 
-                <h5>2. Booster de partida</h5>
-                <p>
-                    Pode auxiliar na partida do veículo quando a bateria estiver
-                    descarregada. É adequado para carros, motocicletas e outros
-                    veículos compatíveis.
-                </p>
+                    <p>
+                        <strong>E-mail:</strong>
+                        joao@email.com
+                    </p>
 
-                <h5>3. Fonte de alimentação portátil</h5>
-                <p>
-                    Possui saídas USB para carregar smartphones, notebooks e
-                    outros dispositivos compatíveis, funcionando também como
-                    uma bateria portátil.
-                </p>
+                    <p>
+                        <strong>Telefone:</strong>
+                        (24) 99999-9999
+                    </p>
 
-                <h5>4. Sistema de proteção</h5>
-                <p>
-                    Conta com bateria integrada e grampos inteligentes com
-                    isolamento. Possui sistemas de proteção contra situações
-                    como faíscas, polaridade reversa e curtos-circuitos.
-                </p>
+                    <a href="#" class="btn btn-primary">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        Editar perfil
+                    </a>
 
-                <h5>5. Iluminação LED</h5>
-                <p>
-                    Possui iluminação LED com diferentes modos, incluindo luz
-                    forte, luz fraca e luz vermelha SOS, podendo ser utilizada
-                    durante a noite ou em situações de emergência.
-                </p>
+                </div>
+            </div>
 
-                <h5>6. Design portátil</h5>
-                <p>
-                    Seu formato compacto, sem fio e fácil de transportar permite
-                    armazená-lo no carro, suporte para bicicleta ou mochila.
-                    É uma opção prática para viagens, uso doméstico, motoristas,
-                    ciclistas e aventureiros.
-                </p>
 
-                <hr>
+            <!-- Endereço -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
 
-                <h3>Informações técnicas</h3>
+                    <h4 class="mb-4">
+                        <i class="fa-solid fa-location-dot me-2"></i>
+                        Endereço de entrega
+                    </h4>
 
-                <ul>
-                    <li><strong>Iluminação LED:</strong> SOS, piscante e brilhante</li>
-                    <li><strong>Pressão máxima:</strong> 150 PSI</li>
-                    <li><strong>Potência do cilindro:</strong> 120 W</li>
-                    <li><strong>Saída USB:</strong> 5V/3A, 9V/2A e 12V/1,5A</li>
-                    <li><strong>Tempo de carregamento:</strong> 3 a 4 horas</li>
-                    <li><strong>Material da carcaça:</strong> PC + ABS</li>
-                    <li><strong>Comprimento do tubo inflável:</strong> 15 cm</li>
-                    <li><strong>Fluxo de ar:</strong> 30 L/min</li>
-                    <li><strong>Temperatura adequada:</strong> -35°C a 80°C</li>
-                </ul>
+                    <p>
+                        <strong>Rua:</strong>
+                        Rua das Flores, 100
+                    </p>
 
-                <hr>
+                    <p>
+                        <strong>Cidade:</strong>
+                        Petrópolis - RJ
+                    </p>
 
-                <h3>Itens inclusos</h3>
+                    <p>
+                        <strong>CEP:</strong>
+                        25600-000
+                    </p>
 
-                <ul>
-                    <li>01 - Auxiliar de partida com compressor de ar</li>
-                    <li>01 - Clip de bateria inteligente</li>
-                    <li>01 - Cabo de carregamento</li>
-                    <li>04 - Agulhas de ar</li>
-                    <li>01 - Saco de armazenamento portátil</li>
-                </ul>
+                    <a href="#" class="btn btn-primary">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        Editar endereço
+                    </a>
+
+                </div>
+            </div>
+
+
+            <!-- Pedidos -->
+            <div class="card shadow-sm">
+
+                <div class="card-body">
+
+                    <h4 class="mb-4">
+                        <i class="fa-solid fa-cart-shopping me-2"></i>
+                        Meus pedidos
+                    </h4>
+
+                    <div class="table-responsive">
+
+                        <table class="table table-hover">
+
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Pedido</th>
+                                    <th>Data</th>
+                                    <th>Status</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>#0001</td>
+                                    <td>05/10/2026</td>
+                                    <td>
+                                        <span class="badge bg-success">
+                                            Entregue
+                                        </span>
+                                    </td>
+                                    <td>R$ 99,90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>#0002</td>
+                                    <td>06/10/2026</td>
+                                    <td>
+                                        <span class="badge bg-primary">
+                                            Enviado
+                                        </span>
+                                    </td>
+                                    <td>R$ 149,90</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
 
             </div>
+
         </div>
 
     </div>
+
 </main>
 
 
@@ -275,7 +308,7 @@
                         <i class="fa-solid fa-users"></i> Quem somos
                     </a>
                     <a class="nav-link text-white py-1" 
-                        href="Contato.html">
+                        href="Faleconosco.html">
                         <i class="fa-solid fa-tty"></i> Fale Conosco
                     </a>
                     <a class="nav-link text-white py-1" 
